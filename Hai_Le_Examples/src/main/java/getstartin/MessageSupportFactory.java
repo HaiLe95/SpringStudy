@@ -1,7 +1,6 @@
 package getstartin;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Properties;
 
 public class MessageSupportFactory {
@@ -9,7 +8,7 @@ public class MessageSupportFactory {
 
     private Properties properties;
     private MessageRenderer messageRenderer;
-    private  MessagePrivoder messagePrivoder;
+    private MessageProvider messagePrivoder;
 
     private MessageSupportFactory() {
         properties = new Properties();
@@ -22,7 +21,7 @@ public class MessageSupportFactory {
             String providerClass = properties.getProperty("provider.class");
 
             messageRenderer = (MessageRenderer) Class.forName(renderedClass).newInstance();
-            messagePrivoder = (MessagePrivoder) Class.forName(providerClass).newInstance();
+            messagePrivoder = (MessageProvider) Class.forName(providerClass).newInstance();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -41,7 +40,7 @@ public class MessageSupportFactory {
         return messageRenderer;
     }
 
-    public MessagePrivoder getMessagePrivoder() {
+    public MessageProvider getMessagePrivoder() {
         return messagePrivoder;
     }
 }

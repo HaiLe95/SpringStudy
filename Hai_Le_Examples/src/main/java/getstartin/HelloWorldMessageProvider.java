@@ -1,6 +1,6 @@
 package getstartin;
 
-public class HelloWorldMessageProvider implements MessagePrivoder {
+public class HelloWorldMessageProvider implements MessageProvider {
 
     @Override
     public String getMessage() {

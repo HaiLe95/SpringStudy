@@ -4,8 +4,8 @@ public interface MessageRenderer {
 
     void render();
 
-    void setMessageProvider(MessagePrivoder provider);
+    void setMessageProvider(MessageProvider provider);
 
-    MessagePrivoder getMessagePrivoder();
+    MessageProvider getMessagePrivoder();
 
 }

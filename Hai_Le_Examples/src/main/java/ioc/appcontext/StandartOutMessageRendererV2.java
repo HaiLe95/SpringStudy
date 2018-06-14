@@ -1,12 +1,12 @@
 package ioc.appcontext;
 
-import getstartin.MessagePrivoder;
+import getstartin.MessageProvider;
 import getstartin.MessageRenderer;
 import org.springframework.stereotype.Service;
 
 @Service("messageRenderer")
 public class StandartOutMessageRendererV2 implements MessageRenderer {
-    private MessagePrivoder messagePrivoder;
+    private MessageProvider messagePrivoder;
 
     @Override
     public void render() {
@@ -19,12 +19,12 @@ public class StandartOutMessageRendererV2 implements MessageRenderer {
     }
 
     @Override
-    public void setMessageProvider(MessagePrivoder provider) {
+    public void setMessageProvider(MessageProvider provider) {
         this.messagePrivoder = provider;
     }
 
     @Override
-    public MessagePrivoder getMessagePrivoder() {
+    public MessageProvider getMessagePrivoder() {
         return this.messagePrivoder;
     }
 }

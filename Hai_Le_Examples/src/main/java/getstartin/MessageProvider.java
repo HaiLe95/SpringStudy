@@ -1,5 +1,5 @@
 package getstartin;
 
-public interface MessagePrivoder {
+public interface MessageProvider {
     String getMessage();
 }

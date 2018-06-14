@@ -1,7 +1,7 @@
 package getstartin;
 
 public class StandartOutMessageRenderer implements MessageRenderer {
-    private MessagePrivoder messagePrivoder;
+    private MessageProvider messagePrivoder;
 
     @Override
     public void render() {
@@ -15,12 +15,12 @@ public class StandartOutMessageRenderer implements MessageRenderer {
     }
 
     @Override
-    public void setMessageProvider(MessagePrivoder messageProvider) {
+    public void setMessageProvider(MessageProvider messageProvider) {
         this.messagePrivoder = messageProvider;
     }
 
     @Override
-    public MessagePrivoder getMessagePrivoder() {
+    public MessageProvider getMessagePrivoder() {
         return messagePrivoder;
     }
 }
