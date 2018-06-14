@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
+        <!-- Обязательные поля для pom -->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>SpringStudy</groupId>
+    <artifactId>SpringStudy</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+
+        <!-- Модули -->
+
+    <modules>
+        <module>Hai_Le_Examples</module>
+    </modules>
+
+    <build>
+        <!-- Дополнительные настройки проекта-->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Настройки и подключение hibernate, junit и spring  -->
+    <properties>
+        <junit.version>4.12</junit.version>
+        <mysql.connector.version>5.1.40</mysql.connector.version>
+        <org.hibernate.core>5.2.17.Final</org.hibernate.core>
+        <org.hibernate.annotations>5.0.3.Final</org.hibernate.annotations>
+        <org.springframework.version>4.3.10.RELEASE</org.springframework.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
