@@ -5,21 +5,21 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 
-        <!-- Обязательные поля для pom -->
+        <!-- pom must-have -->
     <modelVersion>4.0.0</modelVersion>
     <groupId>SpringStudy</groupId>
     <artifactId>SpringStudy</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
 
-        <!-- Модули -->
+        <!-- Modules -->
 
     <modules>
         <module>Hai_Le_Examples</module>
     </modules>
 
     <build>
-        <!-- Дополнительные настройки проекта-->
+        <!-- config-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -33,7 +33,7 @@
         </plugins>
     </build>
 
-    <!-- Настройки и подключение hibernate, junit и spring  -->
+    <!-- dependencies  -->
     <properties>
         <junit.version>4.12</junit.version>
         <mysql.connector.version>5.1.40</mysql.connector.version>
