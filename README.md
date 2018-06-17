@@ -3,10 +3,8 @@ This project is use to be an strong start of spring framework study development.
 
 ##Technologies
 There are some technologies that i have used (and will use) in this project:
- - Spring Core
+ - Spring IoC\DI
  - JUnit
  - Hibernate
  - JDBC
  - Maven
- 
- 
