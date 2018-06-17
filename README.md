@@ -1,1 +1,12 @@
 ##Spring Study project. Based on Spring 4 book by Chris Schaefer
+This project is use to be an strong start of spring framework study development.
+
+##Technologies
+There are some technologies that i have used (and will use) in this project:
+ - Spring Core
+ - JUnit
+ - Hibernate
+ - JDBC
+ - Maven
+ 
+ 
