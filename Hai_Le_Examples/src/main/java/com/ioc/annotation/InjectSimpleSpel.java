@@ -1,12 +1,19 @@
 package com.ioc.annotation;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.stereotype.Service;
 
+@Service("injectSimpleSpel")
 public class InjectSimpleSpel {
 
+    @Value("#{injectionSimpleConfig.name}")
     private String name;
+    @Value("#{injectionSimpleConfig.age}")
     private int age;
+    @Value("#{injectionSimpleConfig.height}")
     private float height;
+    @Value("#{injectionSimpleConfig.programmer}")
     private boolean programmer;
 
     public static void main(String[] args) {

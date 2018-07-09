@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="oracle" name="wiseworm"
+        class="com.ioc.beanfactory.BookWormOracle"/>
+    <bean id="injectionCollection"
+          class="com.ioc.collections.CollectionInjection">
+        <property name="map">
+            <map>
+                <entry key="someValue">
+                    <value>Hello World!</value>
+                </entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="firstName">John</prop>
+                <prop key="secondName">Doe</prop>
+            </props>
+        </property>
+        <property name="set">
+            <set>
+                <value>Hello World!</value>
+                <ref bean="oracle"></ref>
+            </set>
+        </property>
+        <property name="list">
+            <list>
+                <value>Hello World!</value>
+                <ref bean="oracle"/>
+            </list>
+        </property>
+    </bean>
+</beans>

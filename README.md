@@ -1,6 +1,7 @@
 ##Spring Study project. Based on Spring 4 book by Chris Schaefer
 
 This project is use to be an strong start of spring framework study development.
+However you can freely download it to study aswell.
 
 ##Technologies
 

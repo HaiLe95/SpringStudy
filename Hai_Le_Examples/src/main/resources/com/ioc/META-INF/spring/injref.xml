@@ -8,7 +8,7 @@
     <bean id="injectRef"
           class="com.ioc.injectref.InjectRef">
         <property name="oracle">
-            <ref bean="oracle"/>
+            <ref bean="wiseworm"/>
         </property>
     </bean>
 </beans>
