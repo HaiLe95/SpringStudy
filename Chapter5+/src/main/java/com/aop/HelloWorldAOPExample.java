@@ -14,7 +14,7 @@ public class HelloWorldAOPExample {
         MessageWriter proxy = (MessageWriter) factory.getProxy();
 
         target.writeMessage();
-        System.out.println("-");
+        System.out.println("---");
         proxy.writeMessage();
     }
 
