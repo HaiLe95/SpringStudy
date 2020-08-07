@@ -13,5 +13,20 @@
 
     <artifactId>Hai_Le_Examples</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy</artifactId>
+            <version>2.4.12</version>
+        </dependency>
+
+    </dependencies>
 
 </project>

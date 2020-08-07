@@ -7,6 +7,7 @@ However you can freely download it to study as well.
 
 There is bunch of technologies that i have used (and will use) in this project:
  - Spring IoC\DI
+ - Spring AOP
  - JUnit(or not)
  - Hibernate\JPA
  - JDBC(or not)

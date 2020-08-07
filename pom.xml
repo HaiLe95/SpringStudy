@@ -16,6 +16,7 @@
 
     <modules>
         <module>Hai_Le_Examples</module>
+        <module>Chapter5+</module>
     </modules>
 
     <build>
