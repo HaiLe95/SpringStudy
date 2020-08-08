@@ -1,4 +1,4 @@
-package com.aop;
+package com.aop.before;
 
 import org.springframework.aop.MethodBeforeAdvice;
 

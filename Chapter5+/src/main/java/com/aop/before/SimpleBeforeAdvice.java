@@ -1,5 +1,6 @@
-package com.aop;
+package com.aop.before;
 
+import com.aop.MessageWriter;
 import org.springframework.aop.MethodBeforeAdvice;
 import org.springframework.aop.framework.ProxyFactory;
 
