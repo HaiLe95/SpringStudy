@@ -1,4 +1,4 @@
-package com.aop.cut_and_advice;
+package com.aop.cut_and_advice.interfaces;
 
 import java.lang.reflect.Method;
 
